@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="550dp"
+    android:orientation="vertical"
+    android:background="#bab23aba"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment1"
+            android:name="com.ajc.task.BlankFragment1"
+            android:layout_width="0dp"
+            android:background="#167667"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment2"
+            android:name="com.ajc.task.BlankFragment2"
+            android:layout_width="0dp"
+            android:background="#787"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/justBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="127dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="127dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Button" />
+    </RelativeLayout>
+</LinearLayout>
